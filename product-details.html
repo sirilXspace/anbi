@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>ANBI</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="images/favicon.icon" />
+   <!-- <link rel="apple-touch-icon" sizes="32x32" href="images/touch-icon.png" />
+   <link rel="apple-touch-icon" sizes="76x76" href="images/touch-icon76.png" />
+   <link rel="apple-touch-icon" sizes="120x120" href="images/touch-icon120.png" />
+   <link rel="apple-touch-icon" sizes="152x152" href="images/touch-icon152.png" /> -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+   <link href="css/home-style.css" rel="stylesheet">
+   <link href="css/home-responsive.css" rel="stylesheet">
+   <link href="css/menu.css" rel="stylesheet">
+   <link href="css/font/font.css" rel="stylesheet">
+   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"> -->
+
+</head>
+
+<body>
+
+   <!-- Full Width Search -->
+   <div class="search-full-width">
+      <div class="container">
+         <div class="search-container-inner">
+            <input type="text" placeholder="Search for perfumes, gift hampers..." class="search-input-full">
+            <button class="search-btn">Search</button>
+            <button class="search-close"><img src="images/close.png" alt="close"></button>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="position-fixed">
+      <ul>
+         <li><a href="#"><img src="images/ai+.svg"></a></li>
+         <li><a href="#"><img src="images/whatsapp-ic.svg"></a></li>
+      </ul>
+   </div>
+
+
+   <a href="javascript:" id="return-to-top"><i class="fas fa-angle-up pulse"></i></a>
+
+   <div class="marquee-wrap">
+      <div class="marquee">
+         <div class="marquee-content">
+            <span class="marquee-item"><img src="images/icon.png" alt="icon"> Hurry! Exclusive offer ends tonight – shop
+               now before it’s gone!</span>
+            <span class="marquee-item"><img src="images/icon.png" alt="icon"> Hurry! Exclusive offer ends tonight – shop
+               now before it’s gone!</span>
+            <span class="marquee-item"><img src="images/icon.png" alt="icon"> Hurry! Exclusive offer ends tonight – shop
+               now before it’s gone!</span>
+         </div>
+      </div>
+   </div>
+
+   <header class="header">
+      <div class="container">
+         <div class="d-flex  align-items-center justify-content-between">
+            <div class="col f-col">
+               <div class="mobile-menu-trigger">
+                  <span></span>
+               </div>
+               <a href="javascript:void(0)" class="search-trigger"><img src="images/search-ic.svg" alt="image"></a>
+            </div>
+
+            <div class="col s-col">
+               <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+               </div>
+            </div>
+            <div class="col t-col">
+               <div class="right-blk">
+                  <ul>
+                     <li><a href="wishlist.html" class="custom_ic"><span class="cartCout">0</span><img
+                              src="images/wishlist-ic.svg" alt="image"></a></li>
+                     <li><a href="cart.html" class="cart-trigger custom_ic"><span class="cartCout">0</span><img
+                              src="images/bag-ic.svg" alt="image"></a></li>
+                     <li><a href="#" data-bs-toggle="modal" data-bs-target="#loginmodal"><img
+                              src="images/profile-ic.svg" alt="image"></a></li>
+                  </ul>
+                  <div class="lan-switch">
+                     <select class="form-select" aria-label="Default select example">
+                        <option value="1">EN</option>
+                        <option value="2">AR</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header-item">
+            <div class="menu-overlay"></div>
+            <nav class="menu">
+               <div class="mobile-menu-head">
+                  <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                  <a class="current-menu-title" href="#"></a>
+                  <div class="mobile-menu-close"><i><img src="images/close.png" alt="icon"></i></div>
+               </div>
+               <ul class="menu-main">
+                  <li><a href="#">HOME</a></li>
+                  <li class="menu-item-has-children">
+                     <a href="#" class="d-none d-xl-block active">SHOP<i class="fa fa-angle-down"></i></a>
+                     <a href="#" class="d-xl-none d-block active">SHOP<i class="fa fa-angle-down"></i></a>
+                     <div class="sub-menu mega-menu">
+                        <div class="list-item">
+                           <ul>
+                              <li><a href="#">Product 1</a></li>
+                              <li><a href="#">Product 2</a></li>
+                              <li><a href="#">Product 3</a></li>
+                              <li><a href="#">Product 4</a></li>
+                           </ul>
+                        </div>
+                     </div>
+
+                  </li>
+                  <li><a href="#">BESTSELLERS</a></li>
+                  <li><a href="#">SELL ON ANBI</a></li>
+                  <li><a href="#">CATALOG</a></li>
+                  <li><a href="#">ABOUT US</a></li>
+                  <li><a href="#">BLOGS</a></li>
+                  <li><a href="#">CONTACT US</a></li>
+
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </header>
+
+
+
+   <div class="product-details">
+      <div class="container">
+         <div class="bread-crumb-wrap">
+            <nav style="--bs-breadcrumb-divider: '&gt;';" aria-label="breadcrumb">
+               <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Home Appliances</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">GEEPAS 16″ Portable Design Stand Fan GF9615
+                  </li>
+               </ol>
+            </nav>
+         </div>
+         <div class="section-1">
+            <div class="row">
+               <div class="col-md-6">
+                  <!-- Swiper -->
+                  <div class="swiper-container product-slider">
+                     <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                              <img src="images/product-large.png" alt="image">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/product-large.png" alt="image">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/product-large.png" alt="image">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/product-large.png" alt="image">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/product-large.png" alt="image">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/product-large.png" alt="image">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/product-large.png" alt="image">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/product-large.png" alt="image">
+                           </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                     </div>
+                     <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                              <img src="images/product-large.png" alt="image">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/product-large.png" alt="image">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/product-large.png" alt="image">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/product-large.png" alt="image">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/product-large.png" alt="image">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/product-large.png" alt="image">
+                           </div>
+                           <div class="swiper-slide">
+                              <img src="images/product-large.png" alt="image">
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="product_description">
+                     <div class="d-flex justify-content-between flex-column">
+                        <div class="brand-thumb"><img src="images/brand-thumb.png" alt="brand"></div>
+                        <h3>GEEPAS 16″ Portable Design Stand Fan GF9615</h3>
+                     </div>
+
+                     <div class="d-flex align-items-center mb-sm-3 mb-1 mt-sm-3 mt-1 gap-2">
+                        <div class="d-flex">
+                           <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star-half-alt"></i>
+                           </div>
+                           <span class="tot-reviews">(1500 Reviews)</span>
+                        </div>
+                        <div class="d-flex flex-wrap prdt-code gap-3">
+                           <div>Categories: <span>Strainer, Valves</span></div>
+                           <div>SKU: <span>GF9615</span></div>
+                           <div>Brand: <span>GEEPAS</span></div>
+                        </div>
+                     </div>
+
+                     <div class="d-flex pdf-spec-blk gap-3">
+                        <button><i><img src="images/catalog-ic.svg" alt="icon"></i>Product Catalog</button>
+                        <button><i><img src="images/spec-icon.svg" alt="icon"></i>Product Technical
+                           Specification</button>
+                     </div>
+                     <hr>
+
+                     <!-- Price Row -->
+                     <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                           <div class="d-flex align-items-center price-blk">
+                              <i><img src="images/price-symbol2.svg" alt="icon"></i> 500.00
+                           </div>
+                           <label class="offer-tag">25% OFF</label>
+                        </div>
+                        <div class="warranty-blk d-flex align-items-center gap-2">
+                           <i><img src="images/warranty-ic.png" alt="warranty"></i>
+                           <span>1 Year Warranty</span>
+                        </div>
+                     </div>
+
+                     <!-- MRP Row -->
+                     <div class="d-flex align-items-center gap-2 mrp-price mt-1">
+                        <p class="mb-0"><i><img src="images/price-symbol.svg" alt="icon"></i> 1,000.00</p>
+                        <span class="vat-text">All Prices are VAT Inclusive</span>
+                     </div>
+
+                     <!-- Attribute Dropdowns -->
+                     <div class="attr-dropdowns mt-3">
+                        <div class="attr-row">
+                           <label class="attr-label">Size:</label>
+                           <select class="attr-select">
+                              <option>1"</option>
+                              <option>2"</option>
+                              <option>3"</option>
+                           </select>
+                           <i class="fa-solid fa-chevron-down attr-chevron"></i>
+                        </div>
+                        <div class="attr-row">
+                           <label class="attr-label">Model:</label>
+                           <select class="attr-select">
+                              <option>ABBST-0001</option>
+                              <option>ABBST-0002</option>
+                           </select>
+                           <i class="fa-solid fa-chevron-down attr-chevron"></i>
+                        </div>
+                        <div class="attr-row">
+                           <label class="attr-label">Thickness:</label>
+                           <select class="attr-select">
+                              <option>5"</option>
+                              <option>10"</option>
+                           </select>
+                           <i class="fa-solid fa-chevron-down attr-chevron"></i>
+                        </div>
+                        <div class="attr-row">
+                           <label class="attr-label">Color:</label>
+                           <select class="attr-select">
+                              <option>Black</option>
+                              <option>White</option>
+                           </select>
+                           <i class="fa-solid fa-chevron-down attr-chevron"></i>
+                        </div>
+                     </div>
+
+                     <!-- Tabby Payment Strip -->
+                     <div class="tabby-strip d-flex align-items-center justify-content-between mt-3">
+                        <span>As low as <i><img src="images/price-symbol3.svg" alt="icon"></i>
+                           <strong>17.50/month</strong> or 4 interest-free payments</span>
+                        <img src="images/tabby.svg" alt="tabby" class="tabby-logo">
+                     </div>
+
+                     <!-- Quantity + Add to Cart -->
+                     <div class="d-flex align-items-center gap-3 mt-3">
+                        <div class="quantity-container mt-0">
+                           <div class="input-group">
+                              <button class="btn btn-outline-secondary decrement-btn" type="button"><i
+                                    class="fa-solid fa-chevron-left"></i></button>
+                              <input type="text" class="form-control quantity-input" value="1">
+                              <button class="btn btn-outline-secondary increment-btn" type="button"><i
+                                    class="fa-solid fa-chevron-right"></i></button>
+                           </div>
+                        </div>
+                        <a href="#" class="btn-add add-cart flex-grow-1 text-center"><span>Add to Cart</span> <i><img
+                                 src="images/bag-ic2.svg"></i></a>
+                     </div>
+
+                     <!-- OR Divider -->
+                     <div class="or-divider d-flex align-items-center gap-2 my-3">
+                        <hr class="flex-grow-1 m-0">
+                        <span>OR</span>
+                        <hr class="flex-grow-1 m-0">
+                     </div>
+
+                     <!-- Pay with Link -->
+                     <a href="#" class="pay-with-link d-flex align-items-center justify-content-center gap-2">
+                        Pay with <strong class="ms-1"><img src="images/link.svg" alt="link"></strong>
+                     </a>
+
+                     <!-- Bulk Orders Banner -->
+                     <div class="bulk-orders-banner d-flex align-items-center justify-content-between mt-3">
+                        <div class="d-flex align-items-center gap-2">
+                           <i><img src="images/bulk-order-ic.svg" alt="bulk"></i>
+                           <span>For Bulk Orders You May Click The Link To Reach Us</span>
+                        </div>
+                        <a href="#" class="bulk-link">Click Here</a>
+                     </div>
+
+                     <!-- Wishlist & Share -->
+                     <div class="wishlist-share d-flex align-items-center gap-4 mt-3">
+                        <a href="#" class="wishlist-share-btn"><i class="fa-regular fa-heart"></i> ADD TO WISHLIST</a>
+                        <a href="#" class="wishlist-share-btn"><i class="fa-solid fa-share-nodes"></i> SHARE</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+      <div class="block-height"></div>
+      <div class="rating-review">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+                     <h1 class="mb-0 fw-30">RATINGS &amp; REVIEW</h1>
+                  </div>
+
+                  <div class="row">
+                     <div class="col-lg-4">
+                        <div class="ratings-container">
+
+                           <!-- Rating Summary -->
+                           <div class="rating-summary">
+                              <p>Customer Reviews</p>
+                              <h2>4.5/5</h2>
+                              <div class="stars">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star-half-alt"></i>
+                              </div>
+                              <div class="text-rating">Based on&nbsp;11,008&nbsp;customer ratings</div>
+                           </div>
+
+                           <!-- Rating Bars -->
+                           <div class="rating-bars">
+                              <div class="rating-bar">
+                                 <div class="star-level">5 <span class="star active" data-value="1">★</span></div>
+                                 <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 44%;" aria-valuenow="44"
+                                       aria-valuemin="0" aria-valuemax="100"></div>
+                                 </div>
+                                 <div class="percentage">200</div>
+                              </div>
+                              <div class="rating-bar">
+                                 <div class="star-level">4 <span class="star active" data-value="1">★</span></div>
+                                 <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 21%;" aria-valuenow="21"
+                                       aria-valuemin="0" aria-valuemax="100"></div>
+                                 </div>
+                                 <div class="percentage">120</div>
+                              </div>
+                              <div class="rating-bar">
+                                 <div class="star-level">3 <span class="star active" data-value="1">★</span></div>
+                                 <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 13%;" aria-valuenow="13"
+                                       aria-valuemin="0" aria-valuemax="100"></div>
+                                 </div>
+                                 <div class="percentage">80</div>
+                              </div>
+                              <div class="rating-bar">
+                                 <div class="star-level">2 <span class="star active" data-value="1">★</span></div>
+                                 <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 6%;" aria-valuenow="6"
+                                       aria-valuemin="0" aria-valuemax="100"></div>
+                                 </div>
+                                 <div class="percentage">40</div>
+                              </div>
+                              <div class="rating-bar">
+                                 <div class="star-level">1 <span class="star active" data-value="1">★</span></div>
+                                 <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 14%;" aria-valuenow="14"
+                                       aria-valuemin="0" aria-valuemax="100"></div>
+                                 </div>
+                                 <div class="percentage">13</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-8">
+                        <div class="all-flavors pb-0">
+                           <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+                              <h2 class="mb-0">Customer Reviews (1245 reviews)</h2>
+                              <div class="select-flavor d-flex justify-content-sm-end">
+                                 <select class="form-select" aria-label="Default select example">
+                                    <option selected="" disabled>Sort By</option>
+                                    <option value="1">Most Recent</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                 </select>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="review-wrap">
+                                 <div class="posted-by mb-3">
+                                    <div class="user-review-post">
+                                       <h4><i><img src="images/user_ic.svg" alt="user_ic"></i>Alfonso Saris <span
+                                             class="rating_date ms-1"><i class="fa-solid fa-circle me-1"></i>
+                                             13 July 2024</span>
+                                       </h4>
+                                    </div>
+
+                                    <div class="user-review-post">
+                                       <div class="d-flex align-items-center mb-2">
+                                          <div class="stars">
+                                             <i class="fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                             <i class="fas fa-star-half-alt"></i>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                    <h5>Exactly What I Needed!</h5>
+                                    <p>I recently purchased my new laptop from Adam express and I couldn’t be happier.
+                                       The speed is excellent, the display is crisp, and the battery lasts much longer
+                                       than expected. Setup was smooth and it handles multitasking with ease.</p>
+                                    <hr class="style1">
+                                 </div>
+
+                                 <div class="posted-by mb-3">
+                                    <div class="user-review-post">
+                                       <h4><i><img src="images/user_ic.svg" alt="user_ic"></i>Alfonso Saris <span
+                                             class="rating_date ms-1"><i class="fa-solid fa-circle me-1"></i>
+                                             13 July 2024</span>
+                                       </h4>
+                                    </div>
+
+                                    <div class="user-review-post">
+                                       <div class="d-flex align-items-center mb-2">
+                                          <div class="stars">
+                                             <i class="fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                             <i class="fas fa-star-half-alt"></i>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                    <h5>Exactly What I Needed!</h5>
+                                    <p>I recently purchased my new laptop from Adam express and I couldn’t be happier.
+                                       The speed is excellent, the display is crisp, and the battery lasts much longer
+                                       than expected. Setup was smooth and it handles multitasking with ease.</p>
+                                    <hr class="style1">
+                                 </div>
+
+                                 <div class="posted-by mb-3">
+                                    <div class="user-review-post">
+                                       <h4><i><img src="images/user_ic.svg" alt="user_ic"></i>Alfonso Saris <span
+                                             class="rating_date ms-1"><i class="fa-solid fa-circle me-1"></i>
+                                             13 July 2024</span>
+                                       </h4>
+                                    </div>
+
+                                    <div class="user-review-post">
+                                       <div class="d-flex align-items-center mb-2">
+                                          <div class="stars">
+                                             <i class="fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                             <i class="fas fa-star-half-alt"></i>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                    <h5>Exactly What I Needed!</h5>
+                                    <p>I recently purchased my new laptop from Adam express and I couldn’t be happier.
+                                       The speed is excellent, the display is crisp, and the battery lasts much longer
+                                       than expected. Setup was smooth and it handles multitasking with ease.</p>
+                                    <hr class="style1">
+                                 </div>
+
+
+
+
+                              </div>
+                              <a href="review.html" class="load-more">View all&nbsp;1100&nbsp;reviews<i
+                                    class="fa-solid fa-arrow-right ms-3"></i></a>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="block-height"></div>
+
+      <div class="product-section youmay-like custompad">
+         <div class="container">
+            <div class="row">
+               <div class="d-flex justify-content-between align-items-center section-title">
+                  <div>
+                     <h2>You might also like</h2>
+                  </div>
+                  <div class="view-all-btn">
+                     <a href="#">View All <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper newArrivalsSwiper">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div class="product-card">
+                        <div class="img-box position-relative radius-20-10">
+                           <span class="badge-custom">New</span>
+                           <button class="wishlist-btn"><img src="images/wishlist-ic.svg" alt="wishlist"></button>
+                           <a href="product-details.html"><img src="images/product-img-10.png" alt="Img"
+                                 class="w-100 radius-20-10"></a>
+                        </div>
+                        <div class="details text-center pt-3 pb-3">
+                           <h3 class="product-title">Secret Elegance</h3>
+                           <div class="price"><i class="price-ic"><img src="images/price-symbol.svg"
+                                    alt="price-symbol"></i> <span>499</span> <del><i class="striked-price-ic"><img
+                                       src="images/price-symbol.svg" alt="price-symbol"></i>
+                                 <span>550</span></del></div>
+                           <a href="#" class="btn btn-cart"><span>Add to Cart</span> <i
+                                 class="fa-shopping-bag ms-2"><img src="images/bag-ic-2.svg" alt="shopping-bag"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="product-card">
+                        <div class="img-box position-relative radius-20-10">
+                           <span class="badge-custom">New</span>
+                           <button class="wishlist-btn"><img src="images/wishlist-ic.svg" alt="wishlist"></button>
+                           <a href="product-details.html"><img src="images/product-img-11.png" alt="Img"
+                                 class="w-100 radius-20-10"></a>
+                        </div>
+                        <div class="details text-center pt-3 pb-3">
+                           <h3 class="product-title">Velvet Whisper</h3>
+                           <div class="price"><i class="price-ic"><img src="images/price-symbol.svg"
+                                    alt="price-symbol"></i> <span>499</span> <del><i class="striked-price-ic"><img
+                                       src="images/price-symbol.svg" alt="price-symbol"></i>
+                                 <span>550</span></del>
+                           </div>
+                           <a href="#" class="btn btn-cart"><span>Add to Cart</span> <i
+                                 class="fa-shopping-bag ms-2"><img src="images/bag-ic-2.svg" alt="shopping-bag"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="product-card">
+                        <div class="img-box position-relative radius-20-10">
+                           <span class="badge-custom">New</span>
+                           <button class="wishlist-btn"><img src="images/wishlist-ic.svg" alt="wishlist"></button>
+                           <a href="product-details.html"><img src="images/product-img-12.png" alt="Img"
+                                 class="w-100 radius-20-10"></a>
+                        </div>
+                        <div class="details text-center pt-3 pb-3">
+                           <h3 class="product-title">The Aroma Collective</h3>
+                           <div class="price"><i class="price-ic"><img src="images/price-symbol.svg"
+                                    alt="price-symbol"></i> <span>499</span> <del><i class="striked-price-ic"><img
+                                       src="images/price-symbol.svg" alt="price-symbol"></i>
+                                 <span>550</span></del>
+                           </div>
+                           <a href="#" class="btn btn-cart"><span>Add to Cart</span> <i
+                                 class="fa-shopping-bag ms-2"><img src="images/bag-ic-2.svg" alt="shopping-bag"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="product-card">
+                        <div class="img-box position-relative radius-20-10">
+                           <span class="badge-custom">New</span>
+                           <button class="wishlist-btn"><img src="images/wishlist-ic.svg" alt="wishlist"></button>
+                           <a href="product-details.html"><img src="images/product-img-11.png" alt="Img"
+                                 class="w-100 radius-20-10"></a>
+                        </div>
+                        <div class="details text-center pt-3 pb-3">
+                           <h3 class="product-title">Dark Velvet Musk</h3>
+                           <div class="price"><i class="price-ic"><img src="images/price-symbol.svg"
+                                    alt="price-symbol"></i>
+                              <span>499</span> <del><i class="striked-price-ic"><img src="images/price-symbol.svg"
+                                       alt="price-symbol"></i>
+                                 <span>550</span></del>
+                           </div>
+                           <a href="#" class="btn btn-cart"><span>Add to Cart</span> <i
+                                 class="fa-shopping-bag ms-2"><img src="images/bag-ic-2.svg" alt="shopping-bag"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="product-card">
+                        <div class="img-box position-relative radius-20-10">
+                           <span class="badge-custom">New</span>
+                           <button class="wishlist-btn"><img src="images/wishlist-ic.svg" alt="wishlist"></button>
+                           <a href="product-details.html"><img src="images/product-img-02.png" alt="Img"
+                                 class="w-100 radius-20-10"></a>
+                        </div>
+                        <div class="details text-center pt-3 pb-3">
+                           <h3 class="product-title">Mystic Aura</h3>
+                           <div class="price"><i class="price-ic"><img src="images/price-symbol.svg"
+                                    alt="price-symbol"></i>
+                              <span>499</span> <del><i class="striked-price-ic"><img src="images/price-symbol.svg"
+                                       alt="price-symbol"></i>
+                                 <span>550</span></del>
+                           </div>
+                           <a href="#" class="btn btn-cart"><span>Add to Cart</span> <i
+                                 class="fa-shopping-bag ms-2"><img src="images/bag-ic-2.svg" alt="shopping-bag"></i></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-pagination"></div>
+            </div>
+
+
+         </div>
+      </div>
+   </div>
+
+
+
+
+   <footer>
+      <div class="container">
+         <div class="row">
+            <div class="box box-1 col-lg-3 col-6">
+               <h5 class="footer-heading">Main Categories</h5>
+               <ul class="list-unstyled footer-links">
+                  <li><a href="#">HVAC Products & AC Spare Parts</a></li>
+                  <li><a href="#">Plumbing Materials</a></li>
+                  <li><a href="#">Valves Products & Fittings</a></li>
+                  <li><a href="#">Pipes & Fittings</a></li>
+               </ul>
+            </div>
+
+            <div class="box box-2 col-lg-3 col-6">
+               <h5 class="footer-heading">Ind. Solutions</h5>
+               <ul class="list-unstyled footer-links">
+                  <li><a href="#">PERT Pipes & Fittings</a></li>
+                  <li><a href="#">Adhesive, Sealants & Tape</a></li>
+                  <li><a href="#">Hand & Power Tools</a></li>
+                  <li><a href="#">Pipe Accessories & Isolators</a></li>
+                  <li><a href="#">Oil & Gas Valves</a></li>
+               </ul>
+            </div>
+
+            <div class="box box-3 col-lg-3 col-6">
+               <h5 class="footer-heading">Company</h5>
+               <ul class="list-unstyled footer-links">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Blogs and News</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions for Online Purchases</a></li>
+                  <li><a href="#">Terms & Conditions for In-Store Purchases</a></li>
+                  <li><a href="#">Terms & Conditions for Use of the Site</a></li>
+                  <li><a href="#">Trademark Legal Notice</a></li>
+               </ul>
+            </div>
+
+            <div class="box box-4 col-lg-3 col-6">
+               <h5 class="footer-heading">Our Location</h5>
+               <div class="footer-contact-info">
+                  <p>Anbi General Trading LLC<br>PO Box - 112089<br>Showroom - 8 & 9<br>Al Rigga Street<br>Deira Dubai,
+                     UAE</p>
+                  <a href="tel:+97143361377"><i><img src="images/call-ic.svg"></i> +971 4 336 1377</a>
+                  <a href="tel:+97143361377"><i><img src="images/call-ic-2.svg"></i> +971 4 336 1377</a>
+                  <a href="mailto:info@anbisolutions.co"><i><img src="images/sms-ic.svg"></i>
+                     info@anbisolutions.com</a>
+                  <p><i><img src="images/time-ic.svg"></i> Mon to Sat 8AM - 7PM</p>
+               </div>
+            </div>
+         </div>
+
+         <hr class="border-secondary my-4">
+
+         <div class="d-flex justify-content-between align-items-center">
+            <div class="footer-logo">
+               <img src="images/footer-logo.png" alt="ANBI" class="mb-1">
+               <p class="mb-0 text-white">© 2026 Anbi | All Rights Reserved</p>
+            </div>
+            <div class="social-links d-flex gap-3">
+               <a href="#" class="social-icon"><i><img src="images/insta-ic.svg"></i></a>
+               <a href="#" class="social-icon"><i><img src="images/fb-ic.svg"></i></a>
+               <a href="#" class="social-icon"><i><img src="images/x-ic.svg"></i></a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <div class="empty-space"></div>
+
+
+   <!-- Mobile Only -->
+   <div class="bottom-fixed">
+      <ul>
+         <li>
+            <a href="index.html" class="active">
+               <i><img src="images/hom-ic.svg" alt="icon"></i>
+               <span>Home</span>
+            </a>
+         </li>
+         <li>
+            <a href="product.html">
+               <i><img src="images/cate-ic.svg" alt="icon"></i>
+               <span>Categories</span>
+            </a>
+         </li>
+         <li>
+            <a href="cart.html">
+               <i><img src="images/cart-ic.svg" alt="icon"></i>
+               <span>Cart</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginmodal">
+               <i><img src="images/pro-ic.svg" alt="icon"></i>
+               <span>Profile</span>
+            </a>
+         </li>
+      </ul>
+   </div>
+
+   <!-- Cart Sidebar Overlay -->
+   <div class="cart-sidebar-overlay"></div>
+
+   <!-- Cart Sidebar -->
+   <div class="cart-sidebar">
+      <div class="cart-sidebar-header">
+         <h3>Your shopping bag (1)</h3>
+         <button class="close-cart-sidebar"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="cart-sidebar-body">
+         <!-- Item 1 -->
+         <div class="cart-item">
+            <div class="cart-item-image">
+               <img src="images/product-img-01.png" alt="Product">
+            </div>
+            <div class="cart-item-details">
+               <h4>Blush Aura</h4>
+               <div class="price-qty">
+                  <span class="cart-price"><i class="price-ic"><img src="images/price-symbol.svg"
+                           alt="price-symbol"></i>
+                     500.00</span>
+                  <div class="qty-control">
+                     <button class="qty-btn decrement-btn"><i class="fa-solid fa-minus"></i></button>
+                     <input type="text" class="quantity-input" value="1" readonly>
+                     <button class="qty-btn increment-btn"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+               </div>
+            </div>
+            <button class="remove-item"><i class="fa-regular fa-trash-can"></i></button>
+         </div>
+      </div>
+      <div class="cart-sidebar-footer">
+         <div class="cart-total">
+            <span>Total <small>(including vat)</small></span>
+            <span class="total-amount"><i class="price-ic"><img src="images/price-symbol.svg" alt="price-symbol"></i>
+               500.00</span>
+         </div>
+         <div class="cart-actions">
+            <a href="cart.html" class="btn btn-view-cart">View Cart</a>
+            <button class="btn btn-continue-shopping">Continue Shopping</button>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- <script src="js/wow.js"></script> -->
+   <script src="js/page.js"></script>
+   <script src="js/swiper-call.js"></script>
+
+   <script>
+      var swiper = new Swiper(".mySwiper", {
+         loop: true,
+         spaceBetween: 10,
+         freeMode: true,
+         watchSlidesProgress: true,
+         arrow: true,
+         slidesPerView: 5,
+         navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+         },
+         breakpoints: {
+            768: {
+               slidesPerView: 7,
+            },
+         },
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+         loop: true,
+         spaceBetween: 10,
+         navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+         },
+         thumbs: {
+            swiper: swiper,
+         },
+      });
+   </script>

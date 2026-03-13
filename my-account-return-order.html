@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title></title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="images/favicon.png">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+   <link href="css/home-style.css" rel="stylesheet">
+   <link href="css/home-responsive.css" rel="stylesheet">
+   <link href="css/menu.css" rel="stylesheet">
+   <link href="css/font/font.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+   <!-- Login -->
+   <div class="modal fade login-modal" id="loginmodal" tabindex="-1" aria-hidden="true" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <button type="button" class="btn-closeme" data-bs-dismiss="modal" aria-label="Close"><img
+                  src="images/close-btn.png" alt="icon"></button>
+            <div class="modal-body">
+               <!-- Top icons -->
+               <div class="top-icons">
+                  <img src="images/login_bg.png" alt="icon1" />
+               </div>
+               <div class="modal-body-content">
+                  <!-- Login header -->
+                  <div class="login-header">Login or Sign-up</div>
+                  <div class="login-subtext">
+                     Enter your email address to receive a verification code.
+                  </div>
+                  <!-- Form -->
+                  <form>
+                     <div class="mb-3 position-relative">
+                        <label class="form-control-label mt-4 mb-2">Email Address</label>
+                        <input type="text" class="form-control" placeholder="janedeo@gmail.com" value="" />
+                     </div>
+                     <div class="mb-3 position-relative">
+                        <label for="password" class="form-control-label mb-2">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter password">
+                        <i class="fas fa-eye password-toggle" id="togglePassword"></i>
+                     </div>
+                     <a href="#" class="float-end fg-pwd" data-bs-toggle="modal" data-bs-target="#fogotpwd">Forgot
+                        password?</a>
+                     <button type="submit" class="btn btn-login">
+                        Login
+                     </button>
+                     <p class="clikregister text-center mt-2 mb-0" data-bs-toggle="modal"
+                        data-bs-target="#registermodal">
+                        Don’t Have an account? <a href="#" class="text-black">Create
+                           Account</a>
+                     </p>
+                     <div class="login-with"><span>Or login with</span></div>
+
+                     <ul class="d-flex justify-content-center align-items-center social-login-list">
+                        <li>
+                           <a class="whtsapp login-with-icon" data-bs-toggle="modal" data-bs-target="#whatsapplogin">
+                              <i class="fa-brands fa-whatsapp"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="google login-with-icon">
+                              <i class="fa-brands fa-google"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- Whatsapp Login -->
+   <div class="modal fade login-modal" id="whatsapplogin" tabindex="-1" aria-hidden="true" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <button type="button" class="btn-closeme" data-bs-dismiss="modal" aria-label="Close"><img
+                  src="images/close-btn.png" alt="icon"></button>
+            <div class="modal-body">
+               <!-- Top icons -->
+               <div class="top-icons">
+                  <img src="images/login_bg.png" alt="icon1" />
+               </div>
+               <div class="modal-body-content">
+                  <!-- Login header -->
+                  <div class="login-header">Login or Sign-up</div>
+                  <div class="login-subtext">
+                     Login to access your Anooca account
+                  </div>
+                  <!-- Form -->
+                  <form>
+                     <div class="mb-3 position-relative">
+                        <label class="form-control-label mt-4 mb-2">Whatsapp Number</label>
+                        <input type="text" class="form-control" placeholder="9876543210" value="" />
+                     </div>
+                     <button type="submit" class="btn btn-login" data-bs-toggle="modal" data-bs-target="#otpmodal2">
+                        Login
+                     </button>
+                     <div class="login-with"><span>Or login with</span></div>
+                     <ul class="d-flex justify-content-center align-items-center social-login-list">
+                        <li>
+                           <a class="google login-with-icon">
+                              <i class="fa-brands fa-google"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="with-email login-with-icon" data-bs-toggle="modal" data-bs-target="#loginmodal">
+                              <i class="fa-solid fa-envelope"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- OTP -->
+   <div class="modal fade login-modal" id="otpmodal2" tabindex="-1" aria-hidden="true" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <button type="button" class="btn-closeme" data-bs-dismiss="modal" aria-label="Close"><img
+                  src="images/close-btn.png" alt="icon"></button>
+
+            <div class="modal-body">
+               <!-- Top icons -->
+               <div class="top-icons">
+                  <img src="images/otp_bg.png" alt="bg" />
+               </div>
+               <div class="modal-body-content">
+                  <form class="otp-wrapper">
+                     <a href="#" class="back-login" data-bs-toggle="modal" data-bs-target="#loginmodal">&larr; Back To
+                        Login</a>
+                     <div class="login-header">Verify Code</div>
+                     <div class="login-subtext">
+                        An authentication code has been sent to janedoe@gmail.com
+                     </div>
+
+                     <div class="mb-3 mt-4">
+                        <label for="otp-code" class="form-control-label">Enter Code</label>
+                        <input type="text" class="form-control mt-2" id="otp-code" placeholder="Enter OTP" />
+                     </div>
+
+                     <div class="mb-3 text-end resend">
+                        Didn't receive a code?
+                        <span onclick="resendCode()">Resend</span>
+                     </div>
+
+                     <button type="submit" class="btn btn-login" data-bs-toggle="modal"
+                        data-bs-target="#resetpassword">Verify</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+   <!-- Register -->
+   <div class="modal fade login-modal" id="registermodal" tabindex="-1" aria-modal="true" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <button type="button" class="btn-closeme" data-bs-dismiss="modal" aria-label="Close"><img
+                  src="images/close-btn.png" alt="icon"></button>
+            <div class="modal-body">
+               <!-- Top icons -->
+               <div class="top-icons">
+                  <img src="images/login_bg.png" alt="icon1" />
+               </div>
+               <div class="modal-body-content">
+                  <!-- Login header -->
+                  <div class="login-header">Fill the Details</div>
+                  <div class="login-subtext mb-4">
+                     Fill in your information so we can get in touch with you and serve you better.
+                  </div>
+                  <form>
+                     <div class="mb-2">
+                        <label class="form-control-label mb-2">Full Name</label>
+                        <input type="text" class="form-control" placeholder="John Doe" value="John Doe">
+                     </div>
+                     <div class="mb-2">
+                        <label class="form-control-label mb-2">Email Address</label>
+                        <input type="email" class="form-control" placeholder="Email Address">
+                     </div>
+                     <div class="mb-2">
+                        <label class="form-control-label mb-2">Phone Number</label>
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                     </div>
+                     <div class="mb-2">
+                        <label class="form-control-label mb-2">Whatsapp Number</label>
+                        <input type="text" class="form-control" placeholder="Whatsapp Number">
+                     </div>
+                     <button type="submit" class="btn btn-login">Continue</button>
+                     <p class="clikregister text-center mt-2 mb-0" data-bs-toggle="modal" data-bs-target="#loginmodal">
+                        Already Have an account? <a href="#" class="text-black text-decoration-underline"> Log In </a>
+                     </p>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Forgot Passwrod -->
+   <div class="modal fade login-modal" id="fogotpwd" tabindex="-1" aria-hidden="true" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <button type="button" class="btn-closeme" data-bs-dismiss="modal" aria-label="Close"><img
+                  src="images/close-btn.png" alt="icon"></button>
+            <div class="modal-body">
+               <!-- Top icons -->
+               <div class="top-icons">
+                  <img src="images/login_bg.png" alt="forgot-password" />
+               </div>
+
+               <!-- Step 1: Email -->
+               <div id="fp-step-email" class="modal-body-content">
+                  <!-- Login header -->
+                  <a href="#" class="backtome d-flex align-items-center" data-bs-toggle="modal"
+                     data-bs-target="#loginmodal"> <i class="fa-solid fa-chevron-left me-2"></i> Back to Login</a>
+                  <div class="login-header">Forgot Password</div>
+                  <div class="login-subtext">
+                     Enter your registrered email address.
+                  </div>
+                  <!-- Form -->
+                  <form onsubmit="event.preventDefault(); goToOtp();">
+                     <div class="mb-3 position-relative">
+                        <label class="form-control-label mt-4 mb-2">Email Address</label>
+                        <input type="text" class="form-control" placeholder="janedeo@gmail.com" value="" />
+                     </div>
+                     <button type="submit" class="btn btn-login">
+                        Continue
+                     </button>
+                  </form>
+               </div>
+
+               <!-- Step 2: OTP -->
+               <div id="fp-step-otp" class="modal-body-content" style="display: none;">
+                  <form class="otp-wrapper" onsubmit="event.preventDefault(); goToReset();">
+                     <a href="#" class="back-login" onclick="backToEmail(); return false;">&larr; Back</a>
+                     <div class="login-header">Verify Code</div>
+                     <div class="login-subtext">
+                        An authentication code has been sent to your email.
+                     </div>
+
+                     <div class="mb-3 mt-4">
+                        <label for="otp-code" class="form-control-label">Enter Code</label>
+                        <input type="text" class="form-control mt-2" id="otp-code" placeholder="Enter OTP" />
+                     </div>
+
+                     <div class="mb-3 text-end resend">
+                        Didn't receive a code?
+                        <span onclick="resendCode()">Resend</span>
+                     </div>
+
+                     <button type="submit" class="btn btn-login">Verify</button>
+                  </form>
+               </div>
+
+               <!-- Step 3: Reset Password -->
+               <div id="fp-step-reset" class="modal-body-content" style="display: none;">
+                  <form class="otp-wrapper" onsubmit="event.preventDefault(); finishReset();">
+                     <!-- Usually no back button from reset password to OTP once verified, but user might want one. keeping it simple -->
+                     <a href="#" class="back-login" onclick="backToOtp(); return false;">&larr; Back</a>
+                     <div class="login-header">Reset Password</div>
+
+                     <div class="mb-3 mt-4 position-relative">
+                        <label for="rpassword" class="form-control-label mb-2">Enter new password</label>
+                        <input type="password" class="form-control" id="rpassword" placeholder="Enter password">
+                        <i class="fas fa-eye password-toggle" id="rtogglePassword"></i>
+                     </div>
+                     <div class="mb-3 position-relative">
+                        <label for="rpassword2" class="form-control-label mb-2">Re-enter new password</label>
+                        <input type="password" class="form-control" id="rpassword2" placeholder="Enter password">
+                        <i class="fas fa-eye password-toggle" id="rtogglePassword2"></i>
+                     </div>
+
+                     <button type="submit" class="btn btn-login">Reset Password</button>
+                  </form>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Myaccount Modal -->
+   <div class="modal fade trackorder-modal" id="trackorder-modal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+
+            <div class="modal-body">
+               <div class="d-flex justify-content-between mb-sm-4 mb-2">
+                  <h2 class="f-24">Order Tracking</h2>
+                  <button type="button" class="c_close" data-bs-dismiss="modal" aria-label="Close"><i><img
+                           src="images/close-addr.svg" alt="icon"></i></button>
+               </div>
+
+               <div class="tracking-box">
+                  <div class="tracking-header">
+                     <div>
+                        <h5>Order ID: <span>#0068521705</span></h5>
+                     </div>
+                     <div>
+                        <h5>Tracking ID: <span>23415236</span></h5>
+                     </div>
+                  </div>
+
+
+                  <div class="progress-track progress-2">
+                     <div class="step completed active">
+                        <div class="circle"><i class="fa-solid fa-check"></i></div>
+                        <div class="label">Ordered</div>
+                     </div>
+                     <div class="step active">
+                        <div class="circle"><i class="fa-solid fa-check"></i></div>
+                        <div class="label">Shipped</div>
+                     </div>
+                     <div class="step">
+                        <div class="circle"><i class="fa-solid fa-check"></i></div>
+                        <div class="label">Out For Delivery</div>
+                     </div>
+                     <div class="step">
+                        <div class="circle"><i class="fa-solid fa-check"></i></div>
+                        <div class="label">Delivered</div>
+                     </div>
+                  </div>
+
+
+                  <!-- Tracking Updates -->
+                  <div class="tracking-updates">
+                     <h6>Tracking Updates</h6>
+                     <ul class="timeline">
+                        <li class="completed">
+                           <p class="title-sm">Order Confirmed <span class="date">Sun, 8th Sep 25</span></p>
+                           <p>Your order has been placed</p>
+                           <p>Sun, 8th Sep 25 - 5:44 pm</p>
+                           <p>Seller has processed your order</p>
+                           <p>Wed, 11th Sep 25 - 8:43 am</p>
+                           <p>Your item has been picked up by courier partner</p>
+                           <p>Wed, 11th Sep 25 - 9:55 pm</p>
+                        </li>
+                        <li class="completed">
+                           <p class="title-sm">Ready for Dispatch <span class="date">Wed, 11th Sep 25</span></p>
+                           <p>Your item has been shipped</p>
+                           <p>Wed, 11th Sep 25 - 9:55 pm</p>
+                        </li>
+                        <li>
+                           <p class="title-sm">Out For Delivery <span class="date">Wed, 18th Sep 25</span></p>
+                        </li>
+                        <li>
+                           <p class="title-sm">Yet to be Delivered <span class="date">Arriving by Wed, 23 Sep</span></p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+
+
+            </div>
+
+         </div>
+      </div>
+   </div>
+
+
+   <!-- Preloader -->
+   <div id="preloader">
+      <div class="loader-content">
+         <div class="perfume-bottle-wrapper">
+            <svg class="perfume-bottle" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+               <!-- Bottle Body -->
+               <rect x="25" y="45" width="50" height="65" rx="5" fill="none" stroke="#222" stroke-width="2" />
+               <rect x="30" y="50" width="40" height="55" rx="2" fill="#B72629" fill-opacity="0.1" />
+               <!-- Liquid -->
+               <path d="M30 85 Q40 80 50 85 T70 85 V103 Q70 105 68 105 H32 Q30 105 30 103 Z" fill="#B72629" />
+               <!-- Nozzle Base -->
+               <rect x="42" y="35" width="16" height="10" fill="#222" />
+               <!-- Nozzle Head -->
+               <rect class="nozzle-head" x="40" y="25" width="20" height="12" rx="2" fill="#222" />
+               <!-- Spray Nozzle -->
+               <rect x="58" y="28" width="5" height="4" rx="1" fill="#222" />
+
+               <!-- Spray Mist (Animated) -->
+               <g class="spray-mist">
+                  <circle cx="70" cy="30" r="1.5" fill="#B72629" />
+                  <circle cx="75" cy="25" r="2" fill="#B72629" />
+                  <circle cx="75" cy="35" r="1.2" fill="#B72629" />
+                  <circle cx="82" cy="20" r="1.8" fill="#B72629" />
+                  <circle cx="82" cy="30" r="2.2" fill="#B72629" />
+                  <circle cx="82" cy="40" r="1.5" fill="#B72629" />
+                  <circle cx="90" cy="15" r="1" fill="#B72629" />
+                  <circle cx="90" cy="30" r="1.5" fill="#B72629" />
+                  <circle cx="90" cy="45" r="2" fill="#B72629" />
+               </g>
+            </svg>
+            <div class="loading-text">ANOOCA</div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Full Width Search -->
+   <div class="search-full-width">
+      <div class="container">
+         <div class="search-container-inner">
+            <input type="text" placeholder="Search for perfumes, gift hampers..." class="search-input-full">
+            <button class="search-btn">Search</button>
+            <button class="search-close"><img src="images/close.png" alt="close"></button>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- <a href="javascript:" id="return-to-top"><i class="fas fa-angle-up pulse"></i></a> -->
+
+   <header class="header inner-header">
+      <div class="container">
+         <div class="inner-wrap">
+            <div class="d-flex  align-items-center justify-content-between">
+               <div class="mobile-menu-trigger">
+                  <span></span>
+               </div>
+               <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+               </div>
+               <div class="header-item">
+                  <div class="menu-overlay"></div>
+                  <nav class="menu">
+                     <div class="mobile-menu-head">
+                        <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                        <a class="current-menu-title" href="#"></a>
+                        <div class="mobile-menu-close"><i><img src="images/close.png" alt="icon"></i></div>
+                     </div>
+                     <ul class="menu-main">
+                        <li class="menu-item-has-children">
+                           <a href="product.html" class="d-none d-xl-block active">PERFUMES<i
+                                 class="fa fa-angle-down"></i></a>
+                           <a href="#" class="d-xl-none d-block active">PERFUMES<i class="fa fa-angle-down"></i></a>
+                           <div class="sub-menu mega-menu">
+                              <div class="list-item">
+                                 <ul>
+                                    <li><a href="product.html">All Perfumes</a></li>
+                                    <li><a href="product.html">Men</a></li>
+                                    <li><a href="product.html">Women</a></li>
+                                    <li><a href="product.html">Unisex</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+
+                        </li>
+                        <li><a href="product.html">GIFT HAMPERS</a></li>
+                        <li><a href="corporate-gifting.html">CORPORATE GIFTING</a></li>
+                        <li class="menu-item-has-children d-xl-none">
+                           <a href="#">HELP<i class="fa fa-angle-down"></i></a>
+                           <div class="sub-menu mega-menu">
+                              <div class="list-item">
+                                 <ul>
+                                    <li><a href="about.html">ABOUT US</a></li>
+                                    <li><a href="contact.html">CONTACT US</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="terms-condition.html">TERMS & CONDITIONS</a></li>
+                                    <li><a href="privacy-policy.html">PRIVACY POLICY</a></li>
+                                    <li><a href="return-policy.html">RETURN POLICY</a></li>
+                                    <li><a href="shipping-policy.html">SHIPPING POLICY</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+
+                        </li>
+
+
+                     </ul>
+                  </nav>
+               </div>
+               <div class="right-blk d-flex">
+                  <ul>
+                     <li><a href="javascript:void(0)" class="search-trigger"><img src="images/search-ic.svg"
+                              alt="image"></a></li>
+                     <li><a href="wishlist.html" class="custom_ic"><span class="cartCout">0</span><img
+                              src="images/wishlist-ic.svg" alt="image"></a></li>
+                     <li><a href="cart.html"><img src="images/bag-ic.svg" alt="image"></a></li>
+                     <li><a href="#" data-bs-toggle="modal" data-bs-target="#loginmodal"><img
+                              src="images/profile-ic.svg" alt="image"></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <div class="shadow"></div>
+
+
+   <div class="myacount return-ordere custompad">
+      <div class="container">
+         <a class="backto" href="my-account-orders.html"><i class="me-2"><img src="images/backto.png"
+                  alt="icon"></i>Back
+            to Orders</a>
+
+
+         <div class="row mt-4">
+            <div class="col-md-6">
+               <div class="order-info">
+                  <h5>Order ID: #0068521705 </h5>
+                  <div class="order-details">
+                     <ul class="w-100">
+                        <li>
+                           <a href="my-account-orders-details.html" class="d-flex align-items-center">
+                              <div class="img-thumb me-3">
+                                 <img src="images/product-img-01.png" alt="image">
+                              </div>
+                              <div>
+                                 <h4>Desire Petale</h4>
+                                 <p>50 ml</p>
+                                 <p>Qty:1</p>
+                              </div>
+                           </a>
+                        </li>
+                        <li><a href="my-account-orders-details.html" class="d-flex align-items-center">
+                              <div class="img-thumb me-3">
+                                 <img src="images/product-img-02.png" alt="image">
+                              </div>
+                              <div>
+                                 <h4>Blush Aura</h4>
+                                 <p>50 ml</p>
+                                 <p>Qty:1</p>
+                              </div>
+                           </a>
+                        </li>
+                        <li><a href="my-account-orders-details.html" class="d-flex align-items-center">
+                              <div class="img-thumb me-3">
+                                 <img src="images/product-img-03.png" alt="image">
+                              </div>
+                              <div>
+                                 <h4>Night Bloom</h4>
+                                 <p>50 ml</p>
+                                 <p>Qty:1</p>
+                              </div>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="can-reason">
+                  <h5 class="mb-3">Reason for cancellation*</h5>
+                  <select class="form-select c-select" aria-label="Default select example">
+                     <option selected="">Slect Reason</option>
+                     <option value="1">One</option>
+                     <option value="2">Two</option>
+                     <option value="3">Three</option>
+                  </select>
+                  <h5 class="mb-3 mt-3">Other details</h5>
+                  <div class="ctextarea-wrap">
+                     <textarea class="form-control ctextarea" rows="3" placeholder="Any other comments..."></textarea>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div class="col-md-12 mt-4">
+
+            <div class="order-info mb-3">
+               <div class="mb-3">
+                  <h5 class="mb-3">Account Holder Name</h5>
+                  <div class="mb-3">
+                     <input type="email" class="form-control c-color border-0" placeholder="Enter name">
+                  </div>
+               </div>
+               <div class="mb-3">
+                  <h5 class="mb-3">IFSC Code</h5>
+                  <div class="mb-3">
+                     <input type="email" class="form-control c-color border-0" placeholder="IFSC Code">
+                  </div>
+               </div>
+               <div class="mb-3">
+                  <h5 class="mb-3">Account number</h5>
+                  <div class="mb-3">
+                     <input type="email" class="form-control c-color border-0" placeholder="Account number">
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+
+         <div class="buttons">
+            <button class="cancel-btn">Cancel</button>
+            <button class="save-btn">Submit</button>
+         </div>
+
+      </div>
+   </div>
+
+   </div>
+
+
+
+   <footer class="site-footer">
+      <div class="container">
+         <div class="footer-top">
+            <div class="d-flex flex-sm-nowrap flex-wrap justify-content-between">
+               <div class="box box-1">
+                  <div class="footer-logo">
+                     <img src="images/footer-logo.png" alt="logo">
+                  </div>
+                  <p class="copyright">© 2026 Anooca | All Rights Reserved</p>
+                  <div class="social-links d-flex gap-3">
+                     <a href="#" class="social-icon"><i class=""><img src="images/insta-i.svg" alt="icon"></i></a>
+                     <a href="#" class="social-icon"><i class=""><img src="images/faceb.svg" alt="icon"></i></a>
+                     <a href="#" class="social-icon"><i class=""><img src="images/xx.svg" alt="icon"></i></a>
+                  </div>
+               </div>
+               <div class="box box-2">
+                  <ul class="footer-nav">
+                     <li><a href="about.html">ABOUT US</a></li>
+                     <li><a href="contact.html">CONTACT US</a></li>
+                     <li><a href="faq.html">FAQ</a></li>
+                     <li><a href="terms-condition.html">TERMS & CONDITIONS</a></li>
+                  </ul>
+               </div>
+               <div class="box box-3">
+                  <ul class="footer-nav">
+                     <li><a href="privacy-policy.html">PRIVACY POLICY</a></li>
+                     <li><a href="return-policy.html">RETURN POLICY</a></li>
+                     <li><a href="shipping-policy.html">SHIPPING POLICY</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer-ghost-text">
+         <div class="ghost-text-scroll">
+            <img src="images/anooca-text-img.png" alt="anooca">
+            <img src="images/anooca-text-img.png" alt="anooca">
+         </div>
+      </div>
+   </footer>
+
+   <div class="empty-space"></div>
+
+
+   <!-- Mobile Only -->
+   <div class="bottom-fixed">
+      <ul>
+         <li>
+            <a href="index.html" class="active">
+               <i><img src="images/hom-ic.svg" alt="icon"></i>
+               <span>Home</span>
+            </a>
+         </li>
+         <li>
+            <a href="product.html">
+               <i><img src="images/cate-ic.svg" alt="icon"></i>
+               <span>Categories</span>
+            </a>
+         </li>
+         <li>
+            <a href="cart.html">
+               <i><img src="images/cart-ic.svg" alt="icon"></i>
+               <span>Cart</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginmodal">
+               <i><img src="images/pro-ic.svg" alt="icon"></i>
+               <span>Profile</span>
+            </a>
+         </li>
+      </ul>
+   </div>
+
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- <script src="js/wow.js"></script> -->
+   <script src="js/page.js"></script>
+   <script src="js/swiper-call.js"></script>
+
+</body>
+
+</html>

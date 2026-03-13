@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>ANBI</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="images/favicon.icon" />
+   <!-- <link rel="apple-touch-icon" sizes="32x32" href="images/touch-icon.png" />
+   <link rel="apple-touch-icon" sizes="76x76" href="images/touch-icon76.png" />
+   <link rel="apple-touch-icon" sizes="120x120" href="images/touch-icon120.png" />
+   <link rel="apple-touch-icon" sizes="152x152" href="images/touch-icon152.png" /> -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+   <link href="css/home-style.css" rel="stylesheet">
+   <link href="css/home-responsive.css" rel="stylesheet">
+   <link href="css/menu.css" rel="stylesheet">
+   <link href="css/font/font.css" rel="stylesheet">
+   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"> -->
+
+</head>
+
+<body>
+
+   <!-- Full Width Search -->
+   <div class="search-full-width">
+      <div class="container">
+         <div class="search-container-inner">
+            <input type="text" placeholder="Search for perfumes, gift hampers..." class="search-input-full">
+            <button class="search-btn">Search</button>
+            <button class="search-close"><img src="images/close.png" alt="close"></button>
+         </div>
+      </div>
+   </div>
+
+   <header class="header">
+      <div class="container">
+         <div class="d-flex  align-items-center justify-content-between">
+            <div class="col f-col">
+               <div class="mobile-menu-trigger">
+                  <span></span>
+               </div>
+               <a href="javascript:void(0)" class="search-trigger"><img src="images/search-ic.svg" alt="image"></a>
+            </div>
+
+            <div class="col s-col">
+               <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+               </div>
+            </div>
+            <div class="col t-col">
+               <div class="right-blk">
+                  <ul>
+                     <li><a href="wishlist.html" class="custom_ic"><span class="cartCout">0</span><img
+                              src="images/wishlist-ic.svg" alt="image"></a></li>
+                     <li><a href="cart.html" class="cart-trigger custom_ic"><span class="cartCout">0</span><img
+                              src="images/bag-ic.svg" alt="image"></a></li>
+                     <li><a href="#" data-bs-toggle="modal" data-bs-target="#loginmodal"><img
+                              src="images/profile-ic.svg" alt="image"></a></li>
+                  </ul>
+                  <div class="lan-switch">
+                     <select class="form-select" aria-label="Default select example">
+                        <option value="1">EN</option>
+                        <option value="2">AR</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header-item">
+            <div class="menu-overlay"></div>
+            <nav class="menu">
+               <div class="mobile-menu-head">
+                  <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                  <a class="current-menu-title" href="#"></a>
+                  <div class="mobile-menu-close"><i><img src="images/close.png" alt="icon"></i></div>
+               </div>
+               <ul class="menu-main">
+                  <li><a href="#">HOME</a></li>
+                  <li class="menu-item-has-children">
+                     <a href="#" class="d-none d-xl-block active">SHOP<i class="fa fa-angle-down"></i></a>
+                     <a href="#" class="d-xl-none d-block active">SHOP<i class="fa fa-angle-down"></i></a>
+                     <div class="sub-menu mega-menu">
+                        <div class="list-item">
+                           <ul>
+                              <li><a href="#">Product 1</a></li>
+                              <li><a href="#">Product 2</a></li>
+                              <li><a href="#">Product 3</a></li>
+                              <li><a href="#">Product 4</a></li>
+                           </ul>
+                        </div>
+                     </div>
+
+                  </li>
+                  <li><a href="#">BESTSELLERS</a></li>
+                  <li><a href="#">SELL ON ANBI</a></li>
+                  <li><a href="#">CATALOG</a></li>
+                  <li><a href="#">ABOUT US</a></li>
+                  <li><a href="#">BLOGS</a></li>
+                  <li><a href="#">CONTACT US</a></li>
+
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </header>
+
+
+
+   <div class="login-container custom_background">
+      <div class="login-card">
+         <h2>Login</h2>
+         <p>Login To Access Your Anbi Account</p>
+
+         <form>
+            <div class="input-group">
+               <label for="email">Email</label>
+               <input type="email" id="email" class="input_fi" placeholder="demo@gmail.com">
+            </div>
+
+            <div class="input-group">
+               <label for="password">Password</label>
+               <div class="password-wrapper">
+                  <input type="password" id="password" class="input_fi" placeholder="">
+                  <span class="toggle-password"><i class="fa-regular fa-eye"></i></span>
+               </div>
+            </div>
+
+            <div class="forgot-link">
+               <a href="forgot-password.html">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+         </form>
+
+         <p class="signup-text">Don't have an account? <a href="register.html">Create Account</a></p>
+
+         <div class="divider">
+            <span>Or login with</span>
+         </div>
+
+         <div class="social-login">
+            <a href="#" class="social-icon whatsapp"><i><img src="images/ri_whatsapp-fill.svg" alt="icon"></i></a>
+            <a href="#" class="social-icon google"><i><img src="images/gplus.png" alt="icon"></i></a>
+         </div>
+      </div>
+   </div>
+
+
+
+   <footer>
+      <div class="container">
+         <div class="row">
+            <div class="box box-1 col-lg-3 col-6">
+               <h5 class="footer-heading">Main Categories</h5>
+               <ul class="list-unstyled footer-links">
+                  <li><a href="#">HVAC Products & AC Spare Parts</a></li>
+                  <li><a href="#">Plumbing Materials</a></li>
+                  <li><a href="#">Valves Products & Fittings</a></li>
+                  <li><a href="#">Pipes & Fittings</a></li>
+               </ul>
+            </div>
+
+            <div class="box box-2 col-lg-3 col-6">
+               <h5 class="footer-heading">Ind. Solutions</h5>
+               <ul class="list-unstyled footer-links">
+                  <li><a href="#">PERT Pipes & Fittings</a></li>
+                  <li><a href="#">Adhesive, Sealants & Tape</a></li>
+                  <li><a href="#">Hand & Power Tools</a></li>
+                  <li><a href="#">Pipe Accessories & Isolators</a></li>
+                  <li><a href="#">Oil & Gas Valves</a></li>
+               </ul>
+            </div>
+
+            <div class="box box-3 col-lg-3 col-6">
+               <h5 class="footer-heading">Company</h5>
+               <ul class="list-unstyled footer-links">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Blogs and News</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions for Online Purchases</a></li>
+                  <li><a href="#">Terms & Conditions for In-Store Purchases</a></li>
+                  <li><a href="#">Terms & Conditions for Use of the Site</a></li>
+                  <li><a href="#">Trademark Legal Notice</a></li>
+               </ul>
+            </div>
+
+            <div class="box box-4 col-lg-3 col-6">
+               <h5 class="footer-heading">Our Location</h5>
+               <div class="footer-contact-info">
+                  <p>Anbi General Trading LLC<br>PO Box - 112089<br>Showroom - 8 & 9<br>Al Rigga Street<br>Deira Dubai,
+                     UAE</p>
+                  <a href="tel:+97143361377"><i><img src="images/call-ic.svg"></i> +971 4 336 1377</a>
+                  <a href="tel:+97143361377"><i><img src="images/call-ic-2.svg"></i> +971 4 336 1377</a>
+                  <a href="mailto:info@anbisolutions.co"><i><img src="images/sms-ic.svg"></i>
+                     info@anbisolutions.com</a>
+                  <p><i><img src="images/time-ic.svg"></i> Mon to Sat 8AM - 7PM</p>
+               </div>
+            </div>
+         </div>
+
+         <hr class="border-secondary my-4">
+
+         <div class="d-flex justify-content-between align-items-center">
+            <div class="footer-logo">
+               <img src="images/footer-logo.png" alt="ANBI" class="mb-1">
+               <p class="mb-0 text-white">© 2026 Anbi | All Rights Reserved</p>
+            </div>
+            <div class="social-links d-flex gap-3">
+               <a href="#" class="social-icon"><i><img src="images/insta-ic.svg"></i></a>
+               <a href="#" class="social-icon"><i><img src="images/fb-ic.svg"></i></a>
+               <a href="#" class="social-icon"><i><img src="images/x-ic.svg"></i></a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <div class="empty-space"></div>
+
+
+   <!-- Mobile Only -->
+   <div class="bottom-fixed">
+      <ul>
+         <li>
+            <a href="index.html" class="active">
+               <i><img src="images/hom-ic.svg" alt="icon"></i>
+               <span>Home</span>
+            </a>
+         </li>
+         <li>
+            <a href="product.html">
+               <i><img src="images/cate-ic.svg" alt="icon"></i>
+               <span>Categories</span>
+            </a>
+         </li>
+         <li>
+            <a href="cart.html">
+               <i><img src="images/cart-ic.svg" alt="icon"></i>
+               <span>Cart</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginmodal">
+               <i><img src="images/pro-ic.svg" alt="icon"></i>
+               <span>Profile</span>
+            </a>
+         </li>
+      </ul>
+   </div>
+
+   <!-- Cart Sidebar Overlay -->
+   <div class="cart-sidebar-overlay"></div>
+
+   <!-- Cart Sidebar -->
+   <div class="cart-sidebar">
+      <div class="cart-sidebar-header">
+         <h3>Your shopping bag (1)</h3>
+         <button class="close-cart-sidebar"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="cart-sidebar-body">
+         <!-- Item 1 -->
+         <div class="cart-item">
+            <div class="cart-item-image">
+               <img src="images/product-img-01.png" alt="Product">
+            </div>
+            <div class="cart-item-details">
+               <h4>Blush Aura</h4>
+               <div class="price-qty">
+                  <span class="cart-price"><i class="price-ic"><img src="images/price-symbol.svg"
+                           alt="price-symbol"></i>
+                     500.00</span>
+                  <div class="qty-control">
+                     <button class="qty-btn decrement-btn"><i class="fa-solid fa-minus"></i></button>
+                     <input type="text" class="quantity-input" value="1" readonly>
+                     <button class="qty-btn increment-btn"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+               </div>
+            </div>
+            <button class="remove-item"><i class="fa-regular fa-trash-can"></i></button>
+         </div>
+      </div>
+      <div class="cart-sidebar-footer">
+         <div class="cart-total">
+            <span>Total <small>(including vat)</small></span>
+            <span class="total-amount"><i class="price-ic"><img src="images/price-symbol.svg" alt="price-symbol"></i>
+               500.00</span>
+         </div>
+         <div class="cart-actions">
+            <a href="cart.html" class="btn btn-view-cart">View Cart</a>
+            <button class="btn btn-continue-shopping">Continue Shopping</button>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- <script src="js/wow.js"></script> -->
+   <script src="js/page.js"></script>
+   <script src="js/swiper-call.js"></script>
+
+   <script>
+      document.querySelector('.toggle-password').addEventListener('click', function () {
+         const passwordInput = document.querySelector('#password');
+         const icon = this.querySelector('i');
+
+         // Toggle the type attribute
+         const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+         passwordInput.setAttribute('type', type);
+
+         // Toggle the eye / eye-slash icon
+         icon.classList.toggle('fa-eye');
+         icon.classList.toggle('fa-eye-slash');
+      });
+   </script>
+
+</body>
+
+
+</html>
