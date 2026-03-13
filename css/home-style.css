@@ -2530,22 +2530,30 @@ footer {
   display: inline-block;
 }
 
-.or-divider {
-  text-align: center;
-  color: #FF406C;
+.or-divider span {
+  /* Ensures the 'OR' text is centered and has its own color */
+  color: #B72629;
   font-weight: 600;
-  margin: 20px 0;
+  text-transform: uppercase;
 }
 
-.or-divider span {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 50px;
-  font-size: 15px;
-  font-weight: 500;
-  display: inline-block;
-  color: #222222;
+.or-divider::before,
+.or-divider::after {
+  content: "";
+  /* Set your specific width here */
+  width: 100px;
+  height: 2px;
+  border-radius: 2px;
+}
+
+/* Left line: fades from transparent into your bright red */
+.or-divider::before {
+  background: linear-gradient(to right, transparent, #b72629);
+}
+
+/* Right line: fades from your dark red into transparent */
+.or-divider::after {
+  background: linear-gradient(to right, #b72629, transparent);
 }
 
 .address_wrap {
@@ -3336,7 +3344,7 @@ footer {
   color: rgb(34, 34, 34, .5);
 }
 
-.form-control {
+.form-control:not(.quantity-input) {
   padding: 15px 15px
 }
 
@@ -5297,7 +5305,8 @@ ul.social-share li {
 
 .fw-30 {
   font-size: 30px;
-  font-weight: 600;
+  font-family: 'Satoshi-Bold';
+  font-weight: 700;
 }
 
 .ratings-container {
@@ -7412,6 +7421,7 @@ footer .box-4 {
   font-family: 'Satoshi-Regular';
   color: rgb(34, 34, 34, .7);
   font-size: 14px;
+  margin-bottom:1rem;
 }
 
 .prdt-code span {
@@ -7481,7 +7491,10 @@ footer .box-4 {
 .attr-dropdowns {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 15px;
 }
 
 .attr-row {
@@ -7567,7 +7580,7 @@ footer .box-4 {
 /* Pay with Link Button */
 .pay-with-link {
   display: block;
-  background-color: #00c853;
+  background-color: #00D66F;
   color: #222;
   text-decoration: none;
   border-radius: 50px;
@@ -7585,7 +7598,8 @@ footer .box-4 {
 
 /* Bulk Orders Banner */
 .bulk-orders-banner {
-  background-color: #fce4ec;
+  background: #F4D9F2;
+  /* background: linear-gradient(90deg, rgba(255, 59, 183, 0.62) 0%, rgba(128, 36, 122, 0.5) 100%); */
   border-radius: 10px;
   padding: 12px 16px;
   font-size: 14px;
@@ -7636,3 +7650,48 @@ footer .box-4 {
   position: relative;
   top: -2px;
 }
+
+.product-spec {
+  padding-top: 30px;
+  padding-bottom: 30px
+}
+
+/* Custom Tab Styling to match your image */
+.product-spec .nav-pills .nav-link {
+  color: #333;
+  background-color: #e2e3e5;
+  /* Light grey background */
+  margin-right: 15px;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size:20px;
+  font-weight: 700;
+  font-family: 'Satoshi-Bold';
+  transition: all 0.3s ease;
+}
+
+.product-spec .nav-pills .nav-link.active {
+  background-color: #b72a2a !important;
+  /* The specific red color */
+  color: white !important;
+}
+
+
+.product-spec .tab-content {
+  margin-top: 30px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.product-spec .fan-model-title {
+  font-weight: bold;
+  font-size:16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+ ul.product-specs {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+ ul.product-specs li{list-style: disc;}

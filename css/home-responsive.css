@@ -60,10 +60,7 @@
         font-size: 20px;
     }
 
-    .mrp-price p,
-    .select-size {
-        font-size: 14px;
-    }
+
 
     .nutritional-label {
         font-size: 14px;
@@ -651,6 +648,24 @@
     .login-card p {
         font-size: 14px;
     }
+    .product-spec .nav-pills .nav-link{font-size:14px;}
+    .pay-with-link{font-size:14px;padding:10px 50px}
+    .pay-with-link img{width:45px;}
+    .tabby-strip{font-size:14px;}
+    .attr-select{font-size:13px;}
+    .add-cart i{position: relative;top:-2px}
+    .vat-text{font-size:14px;}
+    .price-blk{font-size:25px;}
+    .mrp-price i img{width:25px;}
+    .attr-row{padding:10px 10px}
+    .attr-dropdowns{padding:10px 10px}
+    .mrp-price p,
+    .select-size {
+        font-size: 14px;
+    }
+    .mrp-price p{margin-top:3px;}
+    .tabby-strip{font-size:12px;}
+    .bulk-orders-banner{font-size:12px;}
 
 }
 
@@ -1855,7 +1870,7 @@
     }
 
     .product-details .section-1 {
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 
     .cart-price .price-ic img {
@@ -2023,7 +2038,9 @@
     .btn-tp-arrow {
         padding: 4px;
     }
-
+    .flex-bind{flex-wrap: wrap;}
+    .pdf-spec-blk button{font-size:12px;padding:10px 10px}
+    .pdf-spec-blk button i img{height:15px}
 }
 
 @media (max-width: 575.98px) {
@@ -2370,7 +2387,7 @@
     }
 
     .product_description h3 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .price-blk p {
@@ -2990,6 +3007,16 @@
     .input-group .input_fi {
         padding: 10px
     }
+    .price-blk{font-size:17px;}
+    .price-blk i{margin-right:5px;}
+    .price-blk i img{width:25px;}
+    .mrp-price i img{width:20px;}
+    .bulk-orders-banner i img{width:20px;}
+    .bulk-link{font-size:12px;}
+    .product-spec .nav-pills .nav-link{padding:7px 14px;margin-right:0px}
+    .product-spec .tab-content{margin-top:0px;}
+    .pdf-spec-blk button{padding:10px 7px;font-size:10px}
+    .pdf-spec-blk button i{position: relative;top:-2px;}
 }
 
 @media (max-width: 480px) {

@@ -134,22 +134,28 @@ var stripSwiper = new Swiper(".stripSwiper", {
   },
 });
 
-var newArrivalsSwiper = new Swiper(".newArrivalsSwiper", {
-  slidesPerView: 2.4,
+var relatedSwiper = new Swiper(".relatedSwiper", {
+  slidesPerView: 2,
   spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-nextp4",
+    prevEl: ".swiper-button-prevp4",
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
-    576: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
+    // when window width is >= 992
     992: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+    // when window width is >= 575
+    575: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    type: "progressbar",
   },
 });
 
